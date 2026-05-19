@@ -2,331 +2,573 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thangaprabha J | QA Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thangaprabha J — QA Engineer & SDET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Ambient cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-  <!-- NAV -->
-  <nav>
-    <div class="logo">T<span>.</span></div>
-    <ul>
+  <!-- Cinematic grain overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">TJ<span class="nav-dot">.</span></div>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-tag">Available for opportunities</div>
-    <h1>Thangaprabha <span>J</span></h1>
-    <p class="role">QA Engineer &nbsp;·&nbsp; Automation Testing &nbsp;·&nbsp; SDET</p>
-    <p class="summary">
-      Results-driven QA Engineer with <strong>4.5+ years</strong> of experience in manual and automation
-      testing for web, mobile, and API applications. Delivered <strong>100% daily CI success rates</strong>
-      across large-scale automation projects — automating 100+ test modules for enterprise CMS platforms.
-    </p>
-    <div class="hero-btns">
-      <a href="#contact" class="btn-primary">Get in Touch</a>
-      <a href="#experience" class="btn-outline">View Work</a>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+      <div class="hero-lens-flare"></div>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><span>4.5+</span><p>Years Exp.</p></div>
-      <div class="stat"><span>100+</span><p>Modules Automated</p></div>
-      <div class="stat"><span>7+</span><p>Projects</p></div>
-      <div class="stat"><span>100%</span><p>CI Success Rate</p></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="hero-eyebrow-line"></span>
+        <span>QA Engineer · Automation · SDET</span>
+        <span class="hero-eyebrow-line"></span>
+      </div>
+      <h1 class="hero-name reveal-up delay-1">
+        <span class="hero-name-first">Thangaprabha</span>
+        <span class="hero-name-last">J</span>
+      </h1>
+      <p class="hero-tagline reveal-up delay-2">
+        Crafting quality at scale — <em>100+ automated test modules,</em><br />zero compromises on reliability.
+      </p>
+      <div class="hero-meta reveal-up delay-3">
+        <span class="hero-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Tuticorin, India
+        </span>
+        <span class="hero-meta-divider">·</span>
+        <span class="hero-meta-item">4.5+ Years Experience</span>
+        <span class="hero-meta-divider">·</span>
+        <span class="hero-meta-item">7+ Enterprise Projects</span>
+      </div>
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#experience" class="btn btn--primary">View Experience</a>
+        <a href="#contact" class="btn btn--ghost">Let's Connect</a>
+      </div>
     </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-label">Core Skills</div>
-    <h2>Technical Arsenal</h2>
-
-    <div class="skills-grid">
-
-      <div class="skill-card">
-        <div class="skill-icon">⚙️</div>
-        <h3>Automation</h3>
-        <ul>
-          <li>Selenium WebDriver (Java)</li>
-          <li>Playwright (JavaScript)</li>
-          <li>Page Object Model (POM)</li>
-          <li>Data-Driven Testing</li>
-          <li>Cucumber / BDD</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">🔗</div>
-        <h3>API Testing</h3>
-        <ul>
-          <li>Postman</li>
-          <li>REST API Testing</li>
-          <li>Playwright API</li>
-          <li>REST Assured (familiar)</li>
-          <li>Schema Validation</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">🤖</div>
-        <h3>AI Testing</h3>
-        <ul>
-          <li>AI Output Validation</li>
-          <li>Semantic Accuracy Scoring</li>
-          <li>Hallucination Detection</li>
-          <li>JD & Resume Data Extraction</li>
-          <li>Exact / Partial / Hallucinated Classification</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">🚀</div>
-        <h3>CI/CD & Tools</h3>
-        <ul>
-          <li>Jenkins</li>
-          <li>GitHub Actions</li>
-          <li>Maven</li>
-          <li>Git & GitHub</li>
-          <li>Allure Reports</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">📊</div>
-        <h3>Performance & Security</h3>
-        <ul>
-          <li>Apache JMeter</li>
-          <li>Load, Stress & Spike Testing</li>
-          <li>OWASP ZAP</li>
-          <li>Vulnerability Scanning</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-icon">🗂️</div>
-        <h3>Management & Methods</h3>
-        <ul>
-          <li>JIRA / Azure</li>
-          <li>Agile / Scrum</li>
-          <li>Risk-Based Testing</li>
-          <li>SDLC & STLC</li>
-          <li>TestNG / JUnit</li>
-        </ul>
-      </div>
-
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-label">Work History</div>
-    <h2>Professional Experience</h2>
-    <p class="company-tag">ICANIO Technologies Inc. &nbsp;|&nbsp; June 2021 – Present</p>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <h3>TalAiro – AI-Powered Talent Acquisition Platform</h3>
-            <span class="tl-date">Sep 2025 – Present</span>
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal-left">
+        <span class="section-num">01</span>
+        <span class="section-title-sm">About Me</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col reveal-left">
+          <div class="about-image-wrap">
+            <div class="about-image-frame">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=80" alt="Professional portrait" class="about-img" />
+              <div class="about-image-overlay"></div>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-num">4.5<sup>+</sup></span>
+                <span class="stat-label">Years</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">100<sup>+</sup></span>
+                <span class="stat-label">Modules</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">100<sup>%</sup></span>
+                <span class="stat-label">CI Success</span>
+              </div>
+            </div>
           </div>
-          <p class="tl-desc">Platform for talent acquisition, performance management, and business optimization.</p>
-          <ul>
-            <li>Executed manual functional, regression, and integration testing on QA/dev builds</li>
-            <li>Performed AI testing to validate accuracy of JD and resume data extraction via APIs</li>
-            <li>Developed a scoring framework to evaluate semantic accuracy, partial matches, and hallucinations</li>
-            <li>Verified expected vs. actual AI output values — classified as Exact, Partial, or Hallucinated</li>
-            <li>Logged and tracked defects in JIRA, collaborating with developers for timely resolution</li>
-          </ul>
-          <div class="tl-tags"><span>AI Testing</span><span>JIRA</span><span>API Testing</span><span>Manual Testing</span></div>
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <h3>Contentstack – API Automation</h3>
-            <span class="tl-date">Jun 2025 – Sep 2025</span>
+        <div class="about-text-col reveal-right">
+          <h2 class="section-heading">Building the invisible shield<br /><em>of software quality.</em></h2>
+          <p class="about-body">Results-driven QA Engineer with deep expertise in manual and automation testing for web, mobile, and API applications. I thrive at the intersection of engineering precision and product reliability — where every test case written is a line of defense for the end user.</p>
+          <p class="about-body">From architecting AI validation frameworks to driving 80% reduction in regression cycle time, I bring a strategic lens to quality assurance across FinTech, EdTech, CMS, and AI domains.</p>
+          <div class="about-links">
+            <a href="mailto:thangaprabhaj253@gmail.com" class="about-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              thangaprabhaj253@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank" class="about-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn Profile
+            </a>
           </div>
-          <p class="tl-desc">API automation layer for the Contentstack CMS platform.</p>
-          <ul>
-            <li>Automated 20+ API modules using Playwright with REST API testing</li>
-            <li>Achieved 100% daily CI success rate</li>
-            <li>Designed and maintained API test scripts with schema validation, assertion checks, and error handling</li>
-            <li>Integrated API test suite with CI/CD pipelines for automated regression on every deployment</li>
-          </ul>
-          <div class="tl-tags"><span>Playwright</span><span>REST API</span><span>CI/CD</span><span>Schema Validation</span></div>
         </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <h3>Contentstack – UI Automation</h3>
-            <span class="tl-date">Jun 2024 – Jun 2025</span>
-          </div>
-          <p class="tl-desc">Enterprise CMS platform for web page creation and content management.</p>
-          <ul>
-            <li>Automated 83+ test modules using Playwright (JavaScript) — 100% daily CI/CD success rate</li>
-            <li>Built modular, reusable, scalable test scripts following POM best practices</li>
-            <li>Integrated automation suite with Jenkins CI/CD pipelines</li>
-            <li>Reduced manual regression effort by <strong>80%</strong> through full UI automation</li>
-          </ul>
-          <div class="tl-tags"><span>Playwright</span><span>JavaScript</span><span>Jenkins</span><span>POM</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <h3>PluginLive – Student-Corporate Job Matching</h3>
-            <span class="tl-date">Feb 2023 – Jun 2024</span>
-          </div>
-          <p class="tl-desc">Platform connecting students with job opportunities via institutes and corporates.</p>
-          <ul>
-            <li>End-to-end manual testing across 4 user roles: Admin, Institute, Student, Corporate</li>
-            <li>Validated role publishing workflows, student eligibility logic, and access control</li>
-            <li>Conducted load and stress testing using JMeter for platform scalability</li>
-          </ul>
-          <div class="tl-tags"><span>Manual Testing</span><span>JMeter</span><span>Performance Testing</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <h3>QPay – Mobile Payment Application</h3>
-            <span class="tl-date">Feb 2023 – Apr 2023</span>
-          </div>
-          <p class="tl-desc">Mobile payment app (similar to PhonePe/GPay) for Android and iOS.</p>
-          <ul>
-            <li>Created and executed test cases for smoke and functional testing on Android and iOS builds</li>
-            <li>Validated payment flows, transaction history, and error handling scenarios</li>
-          </ul>
-          <div class="tl-tags"><span>Mobile Testing</span><span>Android</span><span>iOS</span><span>Functional Testing</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <h3>Smart Search – ElasticSearch Application</h3>
-            <span class="tl-date">Apr 2022 – Sep 2024</span>
-          </div>
-          <p class="tl-desc">Real-time, high-performance search application powered by ElasticSearch.</p>
-          <ul>
-            <li>Created comprehensive test cases from business and functional requirements</li>
-            <li>Performed API testing and automation using Postman for search endpoints</li>
-            <li>Utilized BugBug.io for web UI automation across key user workflows</li>
-          </ul>
-          <div class="tl-tags"><span>Postman</span><span>API Testing</span><span>BugBug.io</span></div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-header">
-            <h3>Careerlabs – Student Profile Building Portal</h3>
-            <span class="tl-date">Jun 2021 – Apr 2022</span>
-          </div>
-          <p class="tl-desc">India's first profile-building platform for college students.</p>
-          <ul>
-            <li>Developed detailed test cases based on business requirements and user stories</li>
-            <li>Performed functional, regression, and integration testing across multiple modules</li>
-            <li>Logged defects with clear reproduction steps and collaborated with developers</li>
-          </ul>
-          <div class="tl-tags"><span>Functional Testing</span><span>Regression</span><span>Integration Testing</span></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENTS -->
-  <section id="achievements">
-    <div class="section-label">Highlights</div>
-    <h2>Key Achievements</h2>
-    <div class="achievements-grid">
-      <div class="ach-card">
-        <div class="ach-num">100+</div>
-        <p>Test modules automated (83 UI + 20+ API) with 100% daily CI/CD success rate at Contentstack</p>
-      </div>
-      <div class="ach-card">
-        <div class="ach-num">80%</div>
-        <p>Reduction in manual regression cycle time through comprehensive UI automation</p>
-      </div>
-      <div class="ach-card">
-        <div class="ach-num">7+</div>
-        <p>Diverse projects delivered across FinTech, EdTech, CMS, and AI domains</p>
-      </div>
-      <div class="ach-card">
-        <div class="ach-num">AI</div>
-        <p>Built an AI testing validation framework for semantic accuracy scoring — reducing manual review time significantly</p>
       </div>
     </div>
   </section>
 
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="section-label">Education</div>
-    <h2>Academic Background</h2>
-    <div class="edu-card">
-      <div class="edu-icon">🎓</div>
-      <div>
-        <h3>Master of Science (M.Sc.) in Computer Science</h3>
-        <p>Manonmaniam Sundaranar University &nbsp;·&nbsp; 2019 – 2021</p>
+  <!-- Experience Section -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal-left">
+        <span class="section-num">02</span>
+        <span class="section-title-sm">Experience</span>
+      </div>
+      <h2 class="section-heading reveal-up">Professional <em>Journey</em></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div>
+                <h3 class="timeline-role">QA Engineer</h3>
+                <p class="timeline-company">ICANIO Technologies Inc.</p>
+              </div>
+              <span class="timeline-period">June 2021 – Present</span>
+            </div>
+            <div class="timeline-projects">
+
+              <div class="timeline-project">
+                <div class="project-tag">AI / Talent Tech</div>
+                <h4>TalAiro – AI-Powered Talent Acquisition</h4>
+                <span class="project-period">Sep 2025 – Present</span>
+                <ul>
+                  <li>Executed manual functional, regression, and integration testing on QA/dev builds</li>
+                  <li>Performed AI testing to validate accuracy of JD and resume data extraction via APIs</li>
+                  <li>Developed a scoring framework to evaluate semantic accuracy, partial matches, and hallucinations in AI-extracted data</li>
+                  <li>Classified AI output results as Exact, Partial, or Hallucinated with systematic tracking</li>
+                </ul>
+              </div>
+
+              <div class="timeline-project">
+                <div class="project-tag">API Automation</div>
+                <h4>Contentstack – API Automation Layer</h4>
+                <span class="project-period">June 2025 – Sep 2025</span>
+                <ul>
+                  <li>Automated 20+ API modules using Playwright achieving 100% daily CI success rate</li>
+                  <li>Designed API test scripts with schema validation, assertion checks, and error handling</li>
+                  <li>Integrated test suite with CI/CD pipelines for automated regression on every deployment</li>
+                </ul>
+              </div>
+
+              <div class="timeline-project">
+                <div class="project-tag">UI Automation</div>
+                <h4>Contentstack – Enterprise CMS Platform</h4>
+                <span class="project-period">June 2024 – June 2025</span>
+                <ul>
+                  <li>Automated 83+ test modules using Playwright (JavaScript) — 100% daily CI/CD success rate</li>
+                  <li>Built modular, reusable, scalable test scripts following Page Object Model (POM)</li>
+                  <li>Reduced manual regression effort by 80% through full UI automation coverage</li>
+                </ul>
+              </div>
+
+              <div class="timeline-project">
+                <div class="project-tag">EdTech / FinTech</div>
+                <h4>PluginLive – Student-Corporate Job Matching</h4>
+                <span class="project-period">Feb 2023 – June 2024</span>
+                <ul>
+                  <li>End-to-end manual testing across 4 distinct user roles: Admin, Institute, Student, Corporate</li>
+                  <li>Conducted load and stress testing using JMeter for platform scalability validation</li>
+                </ul>
+              </div>
+
+              <div class="timeline-project">
+                <div class="project-tag">Mobile / FinTech</div>
+                <h4>QPay – Mobile Payment Application</h4>
+                <span class="project-period">Feb 2023 – Apr 2023</span>
+                <ul>
+                  <li>Created and executed test cases for smoke and functional testing on Android and iOS builds</li>
+                  <li>Validated payment flows, transaction history, and error handling scenarios</li>
+                </ul>
+              </div>
+
+              <div class="timeline-project">
+                <div class="project-tag">Search / ElasticSearch</div>
+                <h4>Smart Search – ElasticSearch Application</h4>
+                <span class="project-period">April 2022 – Sep 2024</span>
+                <ul>
+                  <li>Performed API testing and automation using Postman for search endpoints and data validation</li>
+                  <li>Utilized BugBug.io for web UI automation across key user workflows</li>
+                </ul>
+              </div>
+
+              <div class="timeline-project">
+                <div class="project-tag">EdTech</div>
+                <h4>Careerlabs – Student Profile Building Portal</h4>
+                <span class="project-period">June 2021 – April 2022</span>
+                <ul>
+                  <li>Performed functional, regression, and integration testing across multiple modules</li>
+                  <li>Logged defects with clear reproduction steps and collaborated with developers for resolution</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-2">
+          <div class="timeline-marker">
+            <div class="timeline-dot timeline-dot--edu"></div>
+          </div>
+          <div class="timeline-card timeline-card--edu">
+            <div class="timeline-card-header">
+              <div>
+                <h3 class="timeline-role">M.Sc. Computer Science</h3>
+                <p class="timeline-company">Manonmaniam Sundaranar University</p>
+              </div>
+              <span class="timeline-period">2019 – 2021</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-label">Let's Connect</div>
-    <h2>Get In Touch</h2>
-    <p class="contact-sub">Open to new opportunities and collaborations in QA Engineering & Test Automation.</p>
-    <div class="contact-links">
-      <a href="mailto:thangaprabhaj253@gmail.com" class="contact-card">
-        <span>📧</span>
-        <div>
-          <strong>Email</strong>
-          <p>thangaprabhaj253@gmail.com</p>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank" class="contact-card">
-        <span>💼</span>
-        <div>
-          <strong>LinkedIn</strong>
-          <p>linkedin.com/in/thangaprabha-j</p>
-        </div>
-      </a>
-      <a href="tel:+919384135123" class="contact-card">
-        <span>📞</span>
-        <div>
-          <strong>Phone</strong>
-          <p>+91 93841 35123</p>
-        </div>
-      </a>
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-left">
+        <span class="section-num">03</span>
+        <span class="section-title-sm">Projects</span>
+      </div>
+      <h2 class="section-heading reveal-up">Featured <em>Work</em></h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal-up" data-tilt>
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&auto=format&fit=crop&q=80" alt="AI Testing Framework" />
+            <div class="project-card-overlay">
+              <span class="project-card-tag">AI Testing</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>TalAiro AI Validation Framework</h3>
+            <p>Engineered a semantic scoring framework to evaluate AI-extracted data accuracy — classifying outputs as Exact, Partial, or Hallucinated for talent acquisition workflows.</p>
+            <div class="project-tech">
+              <span>Python</span><span>REST API</span><span>JIRA</span><span>AI Testing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-1" data-tilt>
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&auto=format&fit=crop&q=80" alt="Contentstack Automation" />
+            <div class="project-card-overlay">
+              <span class="project-card-tag">UI Automation</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>Contentstack – 83+ Module Automation</h3>
+            <p>Built a full-scale Playwright automation suite for an enterprise CMS, achieving 100% CI/CD success rate and reducing manual regression effort by 80%.</p>
+            <div class="project-tech">
+              <span>Playwright</span><span>JavaScript</span><span>Jenkins</span><span>POM</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-tilt>
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=700&auto=format&fit=crop&q=80" alt="API Automation" />
+            <div class="project-card-overlay">
+              <span class="project-card-tag">API Automation</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>Contentstack – API Test Suite</h3>
+            <p>Designed and maintained 20+ API automation modules with schema validation, assertion checks, and CI/CD integration achieving 100% daily build success.</p>
+            <div class="project-tech">
+              <span>Playwright API</span><span>REST</span><span>CI/CD</span><span>Schema Validation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-1" data-tilt>
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=700&auto=format&fit=crop&q=80" alt="Mobile Payment Testing" />
+            <div class="project-card-overlay">
+              <span class="project-card-tag">Mobile Testing</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>QPay – Mobile Payment QA</h3>
+            <p>Delivered end-to-end QA for a mobile payment platform on Android & iOS — validating payment flows, transaction history, and critical error handling paths.</p>
+            <div class="project-tech">
+              <span>Android</span><span>iOS</span><span>Manual Testing</span><span>Smoke Testing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-tilt>
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&auto=format&fit=crop&q=80" alt="Performance Testing" />
+            <div class="project-card-overlay">
+              <span class="project-card-tag">Performance</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>PluginLive – Load & Stress Testing</h3>
+            <p>Conducted comprehensive load and stress testing using JMeter to validate platform scalability under concurrent users for a student-corporate matching platform.</p>
+            <div class="project-tech">
+              <span>JMeter</span><span>Load Testing</span><span>Stress Testing</span><span>Scalability</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-3" data-tilt>
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&auto=format&fit=crop&q=80" alt="Smart Search Testing" />
+            <div class="project-card-overlay">
+              <span class="project-card-tag">Search / API</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>Smart Search – ElasticSearch QA</h3>
+            <p>Performed comprehensive API testing and UI automation for a real-time ElasticSearch powered application, ensuring search accuracy and data integrity.</p>
+            <div class="project-tech">
+              <span>Postman</span><span>ElasticSearch</span><span>BugBug.io</span><span>API Testing</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Thangaprabha J &nbsp;·&nbsp; Built with GitHub Pages</p>
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal-left">
+        <span class="section-num">04</span>
+        <span class="section-title-sm">Skills</span>
+      </div>
+      <h2 class="section-heading reveal-up">Technical <em>Arsenal</em></h2>
+
+      <div class="skills-universe reveal-up">
+        <div class="skills-category">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">⚡</span> Automation
+          </h3>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag--primary">Selenium WebDriver</span>
+            <span class="skill-tag skill-tag--primary">Playwright (JS)</span>
+            <span class="skill-tag">Cypress (Exploring)</span>
+            <span class="skill-tag">BugBug.io</span>
+            <span class="skill-tag">Page Object Model</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🌐</span> API Testing
+          </h3>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag--primary">Postman</span>
+            <span class="skill-tag skill-tag--primary">REST API Testing</span>
+            <span class="skill-tag skill-tag--primary">Playwright API</span>
+            <span class="skill-tag">REST Assured</span>
+            <span class="skill-tag">Schema Validation</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">💻</span> Languages
+          </h3>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag--primary">JavaScript</span>
+            <span class="skill-tag skill-tag--primary">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🚀</span> CI/CD & DevOps
+          </h3>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag--primary">Jenkins</span>
+            <span class="skill-tag skill-tag--primary">GitHub Actions</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">AWS (Basics)</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🧪</span> Testing Types
+          </h3>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag--primary">AI Testing</span>
+            <span class="skill-tag skill-tag--primary">Performance (JMeter)</span>
+            <span class="skill-tag">Security (OWASP ZAP)</span>
+            <span class="skill-tag">Mobile (Android / iOS)</span>
+            <span class="skill-tag">Cross-Browser</span>
+            <span class="skill-tag">Regression</span>
+            <span class="skill-tag">Smoke / Sanity</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="skills-cat-title">
+            <span class="skills-cat-icon">🛠</span> Frameworks & Tools
+          </h3>
+          <div class="skills-tags">
+            <span class="skill-tag skill-tag--primary">TestNG</span>
+            <span class="skill-tag skill-tag--primary">JUnit</span>
+            <span class="skill-tag">Cucumber (BDD)</span>
+            <span class="skill-tag">Allure Reports</span>
+            <span class="skill-tag">JIRA</span>
+            <span class="skill-tag">Azure DevOps</span>
+            <span class="skill-tag">IntelliJ / VS Code</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievements reveal-up">
+        <h3 class="achievements-title">Key Achievements</h3>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">🏆</div>
+            <p>Automated <strong>100+ test modules</strong> (83 UI + 20+ API) with 100% daily CI/CD success rate at Contentstack</p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">🤖</div>
+            <p>Built an <strong>AI testing validation framework</strong> for semantic accuracy scoring, reducing manual AI output review time significantly</p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">⚡</div>
+            <p>Reduced regression cycle time by <strong>80%</strong> through comprehensive automation across web, mobile, and API layers</p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">🌐</div>
+            <p>Delivered QA across <strong>7+ diverse projects</strong> spanning FinTech, EdTech, CMS, and AI domains</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal-left">
+        <span class="section-num">05</span>
+        <span class="section-title-sm">Contact</span>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h2 class="section-heading">Let's build<br /><em>quality together.</em></h2>
+          <p class="contact-body">Open to new opportunities, collaborations, and conversations around test automation, AI testing, and quality engineering.</p>
+          <div class="contact-details">
+            <a href="mailto:thangaprabhaj253@gmail.com" class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Email</span>
+                <span class="contact-detail-value">thangaprabhaj253@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919384135123" class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.5 5.5l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Phone</span>
+                <span class="contact-detail-value">+91 9384135123</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank" class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">LinkedIn</span>
+                <span class="contact-detail-value">thangaprabha-j-b7021721a</span>
+              </div>
+            </a>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Location</span>
+                <span class="contact-detail-value">Tuticorin, Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="formName" name="name" placeholder=" " required />
+              <label for="formName">Your Name</label>
+              <div class="form-glow"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="formEmail" name="email" placeholder=" " required />
+              <label for="formEmail">Email Address</label>
+              <div class="form-glow"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="formSubject" name="subject" placeholder=" " />
+              <label for="formSubject">Subject</label>
+              <div class="form-glow"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="formMessage" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="formMessage">Your Message</label>
+              <div class="form-glow"></div>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <span>✓</span> Message sent! I'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">TJ<span>.</span></div>
+        <p class="footer-copy">© 2025 Thangaprabha J · Crafted with precision</p>
+        <div class="footer-links">
+          <a href="mailto:thangaprabhaj253@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
