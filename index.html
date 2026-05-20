@@ -1,576 +1,701 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thangaprabha J — QA Engineer & SDET</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thangaprabha J | QA Engineer & SDET</title>
+  <meta name="description" content="Portfolio of Thangaprabha J – QA Engineer with 4.5+ years in Selenium, Playwright, and AI testing."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Ambient cursor glow -->
-  <div class="cursor-glow" id="cursorGlow"></div>
 
-  <!-- Cinematic grain overlay -->
-  <div class="grain-overlay"></div>
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-box">
+    <div class="loader-spinner"></div>
+    <div class="loader-initials">TJ</div>
+  </div>
+</div>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav-logo">TJ<span class="nav-dot">.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+<div class="noise"></div>
+<div class="bg-mesh"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="orb orb-4"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">TJ<span>.</span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#about"          class="nav-a">About</a></li>
+      <li><a href="#skills"         class="nav-a">Skills</a></li>
+      <li><a href="#experience"     class="nav-a">Experience</a></li>
+      <li><a href="#projects"       class="nav-a">Projects</a></li>
+      <li><a href="#certifications" class="nav-a">Achievements</a></li>
+      <li><a href="#education"      class="nav-a">Education</a></li>
+      <li><a href="#contact"        class="nav-a">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+    <a href="Thangaprabha_QA_Engineer_Resume.docx" download class="nav-resume-btn">
+      <i class="fas fa-arrow-down"></i> Resume
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-orb hero-orb--1"></div>
-      <div class="hero-orb hero-orb--2"></div>
-      <div class="hero-orb hero-orb--3"></div>
-      <div class="hero-lens-flare"></div>
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-left">
+    <div class="hero-chip fade-in">
+      <span class="chip-dot"></span> QA Engineer &nbsp;·&nbsp; SDET &nbsp;·&nbsp; Automation Specialist
     </div>
-    <div class="hero-content">
-      <div class="hero-eyebrow reveal-up">
-        <span class="hero-eyebrow-line"></span>
-        <span>QA Engineer · Automation · SDET</span>
-        <span class="hero-eyebrow-line"></span>
-      </div>
-      <h1 class="hero-name reveal-up delay-1">
-        <span class="hero-name-first">Thangaprabha</span>
-        <span class="hero-name-last">J</span>
-      </h1>
-      <p class="hero-tagline reveal-up delay-2">
-        Crafting quality at scale — <em>100+ automated test modules,</em><br />zero compromises on reliability.
-      </p>
-      <div class="hero-meta reveal-up delay-3">
-        <span class="hero-meta-item">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Tuticorin, India
-        </span>
-        <span class="hero-meta-divider">·</span>
-        <span class="hero-meta-item">4.5+ Years Experience</span>
-        <span class="hero-meta-divider">·</span>
-        <span class="hero-meta-item">7+ Enterprise Projects</span>
-      </div>
-      <div class="hero-cta reveal-up delay-4">
-        <a href="#experience" class="btn btn--primary">View Experience</a>
-        <a href="#contact" class="btn btn--ghost">Let's Connect</a>
-      </div>
+    <h1 class="hero-name fade-in d1">Thangaprabha<span class="name-accent"> J</span></h1>
+    <p class="hero-bio fade-in d2">
+      A results-driven QA Engineer with <strong>4.5+ years</strong> of expertise in manual and automation testing across web, mobile, and API platforms. Specialising in Selenium, Playwright, and AI testing — consistently delivering <strong>100% daily CI/CD success rates</strong> and cutting regression cycles by <strong>80%</strong> on enterprise-scale projects.
+    </p>
+    <div class="hero-btns fade-in d3">
+      <a href="#projects" class="btn-grad"><i class="fas fa-rocket"></i> View Projects</a>
+      <a href="Thangaprabha_QA_Engineer_Resume.docx" download class="btn-outline"><i class="fas fa-download"></i> Resume</a>
+      <a href="#contact" class="btn-text"><i class="fas fa-envelope"></i> Contact</a>
     </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
+  </div>
 
-  <!-- About Section -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="section-label reveal-left">
-        <span class="section-num">01</span>
-        <span class="section-title-sm">About Me</span>
-      </div>
-      <div class="about-grid">
-        <div class="about-image-col reveal-left">
-          <div class="about-image-wrap">
-            <div class="about-image-frame">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=80" alt="Professional portrait" class="about-img" />
-              <div class="about-image-overlay"></div>
-            </div>
-            <div class="about-stats">
-              <div class="stat-card">
-                <span class="stat-num">4.5<sup>+</sup></span>
-                <span class="stat-label">Years</span>
-              </div>
-              <div class="stat-card">
-                <span class="stat-num">100<sup>+</sup></span>
-                <span class="stat-label">Modules</span>
-              </div>
-              <div class="stat-card">
-                <span class="stat-num">100<sup>%</sup></span>
-                <span class="stat-label">CI Success</span>
-              </div>
-            </div>
-          </div>
+  <div class="hero-right fade-in d2">
+    <div class="avatar-wrap">
+      <div class="avatar-bg-ring r1"></div>
+      <div class="avatar-bg-ring r2"></div>
+      <div class="avatar-bg-ring r3"></div>
+      <div class="avatar-blob"></div>
+      <div class="profile-card-outer">
+        <div class="avatar-circle">
+          <span class="avatar-initials">TJ</span>
         </div>
-        <div class="about-text-col reveal-right">
-          <h2 class="section-heading">Building the invisible shield<br /><em>of software quality.</em></h2>
-          <p class="about-body">Results-driven QA Engineer with deep expertise in manual and automation testing for web, mobile, and API applications. I thrive at the intersection of engineering precision and product reliability — where every test case written is a line of defense for the end user.</p>
-          <p class="about-body">From architecting AI validation frameworks to driving 80% reduction in regression cycle time, I bring a strategic lens to quality assurance across FinTech, EdTech, CMS, and AI domains.</p>
-          <div class="about-links">
-            <a href="mailto:thangaprabhaj253@gmail.com" class="about-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-              thangaprabhaj253@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank" class="about-link">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn Profile
-            </a>
-          </div>
+      </div>
+      <!-- Floating badges — repositioned to avoid overlap -->
+      <div class="fbadge fb-top">
+        <div class="fbadge-icon"><i class="fas fa-shield-check"></i></div>
+        <div class="fbadge-text">
+          <span class="fbadge-label">CI/CD</span>
+          <span class="fbadge-value">100% Success</span>
+        </div>
+      </div>
+      <div class="fbadge fb-right">
+        <div class="fbadge-icon fbadge-icon--pink"><i class="fas fa-brain"></i></div>
+        <div class="fbadge-text">
+          <span class="fbadge-label">Expertise</span>
+          <span class="fbadge-value">AI Testing</span>
+        </div>
+      </div>
+      <div class="fbadge fb-bottom">
+        <div class="fbadge-icon fbadge-icon--violet"><i class="fas fa-layer-group"></i></div>
+        <div class="fbadge-text">
+          <span class="fbadge-label">Delivered</span>
+          <span class="fbadge-value">7+ Projects</span>
+        </div>
+      </div>
+      <div class="fbadge fb-left">
+        <div class="fbadge-icon fbadge-icon--rose"><i class="fas fa-bolt"></i></div>
+        <div class="fbadge-text">
+          <span class="fbadge-label">Faster QA</span>
+          <span class="fbadge-value">80% Reduced</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Experience Section -->
-  <section class="experience section" id="experience">
-    <div class="container">
-      <div class="section-label reveal-left">
-        <span class="section-num">02</span>
-        <span class="section-title-sm">Experience</span>
-      </div>
-      <h2 class="section-heading reveal-up">Professional <em>Journey</em></h2>
-
-      <div class="timeline">
-
-        <div class="timeline-item reveal-up">
-          <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-            <div class="timeline-connector"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-card-header">
-              <div>
-                <h3 class="timeline-role">QA Engineer</h3>
-                <p class="timeline-company">ICANIO Technologies Inc.</p>
-              </div>
-              <span class="timeline-period">June 2021 – Present</span>
-            </div>
-            <div class="timeline-projects">
-
-              <div class="timeline-project">
-                <div class="project-tag">AI / Talent Tech</div>
-                <h4>TalAiro – AI-Powered Talent Acquisition</h4>
-                <span class="project-period">Sep 2025 – Present</span>
-                <ul>
-                  <li>Executed manual functional, regression, and integration testing on QA/dev builds</li>
-                  <li>Performed AI testing to validate accuracy of JD and resume data extraction via APIs</li>
-                  <li>Developed a scoring framework to evaluate semantic accuracy, partial matches, and hallucinations in AI-extracted data</li>
-                  <li>Classified AI output results as Exact, Partial, or Hallucinated with systematic tracking</li>
-                </ul>
-              </div>
-
-              <div class="timeline-project">
-                <div class="project-tag">API Automation</div>
-                <h4>Contentstack – API Automation Layer</h4>
-                <span class="project-period">June 2025 – Sep 2025</span>
-                <ul>
-                  <li>Automated 20+ API modules using Playwright achieving 100% daily CI success rate</li>
-                  <li>Designed API test scripts with schema validation, assertion checks, and error handling</li>
-                  <li>Integrated test suite with CI/CD pipelines for automated regression on every deployment</li>
-                </ul>
-              </div>
-
-              <div class="timeline-project">
-                <div class="project-tag">UI Automation</div>
-                <h4>Contentstack – Enterprise CMS Platform</h4>
-                <span class="project-period">June 2024 – June 2025</span>
-                <ul>
-                  <li>Automated 83+ test modules using Playwright (JavaScript) — 100% daily CI/CD success rate</li>
-                  <li>Built modular, reusable, scalable test scripts following Page Object Model (POM)</li>
-                  <li>Reduced manual regression effort by 80% through full UI automation coverage</li>
-                </ul>
-              </div>
-
-              <div class="timeline-project">
-                <div class="project-tag">EdTech / FinTech</div>
-                <h4>PluginLive – Student-Corporate Job Matching</h4>
-                <span class="project-period">Feb 2023 – June 2024</span>
-                <ul>
-                  <li>End-to-end manual testing across 4 distinct user roles: Admin, Institute, Student, Corporate</li>
-                  <li>Conducted load and stress testing using JMeter for platform scalability validation</li>
-                </ul>
-              </div>
-
-              <div class="timeline-project">
-                <div class="project-tag">Mobile / FinTech</div>
-                <h4>QPay – Mobile Payment Application</h4>
-                <span class="project-period">Feb 2023 – Apr 2023</span>
-                <ul>
-                  <li>Created and executed test cases for smoke and functional testing on Android and iOS builds</li>
-                  <li>Validated payment flows, transaction history, and error handling scenarios</li>
-                </ul>
-              </div>
-
-              <div class="timeline-project">
-                <div class="project-tag">Search / ElasticSearch</div>
-                <h4>Smart Search – ElasticSearch Application</h4>
-                <span class="project-period">April 2022 – Sep 2024</span>
-                <ul>
-                  <li>Performed API testing and automation using Postman for search endpoints and data validation</li>
-                  <li>Utilized BugBug.io for web UI automation across key user workflows</li>
-                </ul>
-              </div>
-
-              <div class="timeline-project">
-                <div class="project-tag">EdTech</div>
-                <h4>Careerlabs – Student Profile Building Portal</h4>
-                <span class="project-period">June 2021 – April 2022</span>
-                <ul>
-                  <li>Performed functional, regression, and integration testing across multiple modules</li>
-                  <li>Logged defects with clear reproduction steps and collaborated with developers for resolution</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal-up delay-2">
-          <div class="timeline-marker">
-            <div class="timeline-dot timeline-dot--edu"></div>
-          </div>
-          <div class="timeline-card timeline-card--edu">
-            <div class="timeline-card-header">
-              <div>
-                <h3 class="timeline-role">M.Sc. Computer Science</h3>
-                <p class="timeline-company">Manonmaniam Sundaranar University</p>
-              </div>
-              <span class="timeline-period">2019 – 2021</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">Who I Am</span>
+      <h2 class="sec-title">About <em>Me</em></h2>
     </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section class="projects section" id="projects">
-    <div class="container">
-      <div class="section-label reveal-left">
-        <span class="section-num">03</span>
-        <span class="section-title-sm">Projects</span>
-      </div>
-      <h2 class="section-heading reveal-up">Featured <em>Work</em></h2>
-      <div class="projects-grid">
+    <div class="about-layout reveal">
+      <!-- Left: Profile photo + quick info -->
+      <div class="about-profile-col">
+        <div class="about-photo-wrap">
+          <div class="about-photo-ring"></div>
+          <!-- SVG Profile Illustration -->
+          <div class="about-photo-circle">
+            <svg class="profile-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Thangaprabha J profile">
+              <!-- Background circle -->
+              <circle cx="100" cy="100" r="100" fill="url(#bgGrad)"/>
+              <!-- Body / torso -->
+              <ellipse cx="100" cy="170" rx="52" ry="36" fill="url(#bodyGrad)" opacity="0.9"/>
+              <!-- Neck -->
+              <rect x="88" y="118" width="24" height="20" rx="10" fill="#f5c5a8"/>
+              <!-- Head -->
+              <ellipse cx="100" cy="96" rx="36" ry="40" fill="#f5c5a8"/>
+              <!-- Hair -->
+              <ellipse cx="100" cy="64" rx="38" ry="28" fill="#2a1040"/>
+              <ellipse cx="100" cy="72" rx="36" ry="22" fill="#2a1040"/>
+              <!-- Side hair strands -->
+              <path d="M64 80 Q56 100 60 120" stroke="#2a1040" stroke-width="10" fill="none" stroke-linecap="round"/>
+              <path d="M136 80 Q144 100 140 120" stroke="#2a1040" stroke-width="10" fill="none" stroke-linecap="round"/>
+              <!-- Ears -->
+              <ellipse cx="64" cy="96" rx="7" ry="9" fill="#f5c5a8"/>
+              <ellipse cx="136" cy="96" rx="7" ry="9" fill="#f5c5a8"/>
+              <!-- Eyes -->
+              <ellipse cx="86" cy="94" rx="6" ry="7" fill="#1a0830"/>
+              <ellipse cx="114" cy="94" rx="6" ry="7" fill="#1a0830"/>
+              <circle cx="88" cy="92" r="2" fill="white"/>
+              <circle cx="116" cy="92" r="2" fill="white"/>
+              <!-- Eyebrows -->
+              <path d="M80 84 Q86 80 92 84" stroke="#2a1040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M108 84 Q114 80 120 84" stroke="#2a1040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <!-- Nose -->
+              <path d="M97 102 Q100 110 103 102" stroke="#e8a882" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <!-- Smile -->
+              <path d="M90 114 Q100 122 110 114" stroke="#c8786a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <!-- Bindi -->
+              <circle cx="100" cy="78" r="3" fill="#b83890"/>
+              <!-- Earrings -->
+              <circle cx="64" cy="106" r="4" fill="url(#goldGrad)"/>
+              <circle cx="136" cy="106" r="4" fill="url(#goldGrad)"/>
+              <!-- Collar / professional top -->
+              <path d="M68 136 Q80 128 100 132 Q120 128 132 136 Q120 150 100 152 Q80 150 68 136Z" fill="url(#bodyGrad)" opacity="0.95"/>
+              <path d="M94 132 L100 145 L106 132" fill="white" opacity="0.4"/>
 
-        <article class="project-card reveal-up" data-tilt>
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&auto=format&fit=crop&q=80" alt="AI Testing Framework" />
-            <div class="project-card-overlay">
-              <span class="project-card-tag">AI Testing</span>
-            </div>
+              <defs>
+                <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#c06ba8" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#5a35a8" stop-opacity="0.8"/>
+                </radialGradient>
+                <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#7040b8"/>
+                  <stop offset="100%" stop-color="#c04880"/>
+                </linearGradient>
+                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f7d774"/>
+                  <stop offset="100%" stop-color="#e8a020"/>
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
-          <div class="project-card-body">
-            <h3>TalAiro AI Validation Framework</h3>
-            <p>Engineered a semantic scoring framework to evaluate AI-extracted data accuracy — classifying outputs as Exact, Partial, or Hallucinated for talent acquisition workflows.</p>
-            <div class="project-tech">
-              <span>Python</span><span>REST API</span><span>JIRA</span><span>AI Testing</span>
-            </div>
-          </div>
-        </article>
+          <div class="about-photo-badge"><i class="fas fa-shield-check"></i> QA Expert</div>
+        </div>
 
-        <article class="project-card reveal-up delay-1" data-tilt>
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&auto=format&fit=crop&q=80" alt="Contentstack Automation" />
-            <div class="project-card-overlay">
-              <span class="project-card-tag">UI Automation</span>
-            </div>
+        <div class="about-info-list">
+          <div class="about-info-row">
+            <div class="aic-icon aic-icon--pink"><i class="fas fa-briefcase"></i></div>
+            <div><span class="aic-label">Current Role</span><span class="aic-value">QA Engineer @ ICANIO</span></div>
           </div>
-          <div class="project-card-body">
-            <h3>Contentstack – 83+ Module Automation</h3>
-            <p>Built a full-scale Playwright automation suite for an enterprise CMS, achieving 100% CI/CD success rate and reducing manual regression effort by 80%.</p>
-            <div class="project-tech">
-              <span>Playwright</span><span>JavaScript</span><span>Jenkins</span><span>POM</span>
-            </div>
+          <div class="about-info-row">
+            <div class="aic-icon aic-icon--rose"><i class="fas fa-calendar-check"></i></div>
+            <div><span class="aic-label">Experience</span><span class="aic-value">4.5+ Years</span></div>
           </div>
-        </article>
-
-        <article class="project-card reveal-up delay-2" data-tilt>
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=700&auto=format&fit=crop&q=80" alt="API Automation" />
-            <div class="project-card-overlay">
-              <span class="project-card-tag">API Automation</span>
-            </div>
+          <div class="about-info-row">
+            <div class="aic-icon aic-icon--violet"><i class="fas fa-graduation-cap"></i></div>
+            <div><span class="aic-label">Education</span><span class="aic-value">M.Sc Computer Science</span></div>
           </div>
-          <div class="project-card-body">
-            <h3>Contentstack – API Test Suite</h3>
-            <p>Designed and maintained 20+ API automation modules with schema validation, assertion checks, and CI/CD integration achieving 100% daily build success.</p>
-            <div class="project-tech">
-              <span>Playwright API</span><span>REST</span><span>CI/CD</span><span>Schema Validation</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal-up delay-1" data-tilt>
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=700&auto=format&fit=crop&q=80" alt="Mobile Payment Testing" />
-            <div class="project-card-overlay">
-              <span class="project-card-tag">Mobile Testing</span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <h3>QPay – Mobile Payment QA</h3>
-            <p>Delivered end-to-end QA for a mobile payment platform on Android & iOS — validating payment flows, transaction history, and critical error handling paths.</p>
-            <div class="project-tech">
-              <span>Android</span><span>iOS</span><span>Manual Testing</span><span>Smoke Testing</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal-up delay-2" data-tilt>
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&auto=format&fit=crop&q=80" alt="Performance Testing" />
-            <div class="project-card-overlay">
-              <span class="project-card-tag">Performance</span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <h3>PluginLive – Load & Stress Testing</h3>
-            <p>Conducted comprehensive load and stress testing using JMeter to validate platform scalability under concurrent users for a student-corporate matching platform.</p>
-            <div class="project-tech">
-              <span>JMeter</span><span>Load Testing</span><span>Stress Testing</span><span>Scalability</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal-up delay-3" data-tilt>
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&auto=format&fit=crop&q=80" alt="Smart Search Testing" />
-            <div class="project-card-overlay">
-              <span class="project-card-tag">Search / API</span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <h3>Smart Search – ElasticSearch QA</h3>
-            <p>Performed comprehensive API testing and UI automation for a real-time ElasticSearch powered application, ensuring search accuracy and data integrity.</p>
-            <div class="project-tech">
-              <span>Postman</span><span>ElasticSearch</span><span>BugBug.io</span><span>API Testing</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills section" id="skills">
-    <div class="container">
-      <div class="section-label reveal-left">
-        <span class="section-num">04</span>
-        <span class="section-title-sm">Skills</span>
-      </div>
-      <h2 class="section-heading reveal-up">Technical <em>Arsenal</em></h2>
-
-      <div class="skills-universe reveal-up">
-        <div class="skills-category">
-          <h3 class="skills-cat-title">
-            <span class="skills-cat-icon">⚡</span> Automation
-          </h3>
-          <div class="skills-tags">
-            <span class="skill-tag skill-tag--primary">Selenium WebDriver</span>
-            <span class="skill-tag skill-tag--primary">Playwright (JS)</span>
-            <span class="skill-tag">Cypress (Exploring)</span>
-            <span class="skill-tag">BugBug.io</span>
-            <span class="skill-tag">Page Object Model</span>
+          <div class="about-info-row">
+            <div class="aic-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><span class="aic-label">Location</span><span class="aic-value">Tuticorin, Tamil Nadu, India</span></div>
           </div>
         </div>
 
-        <div class="skills-category">
-          <h3 class="skills-cat-title">
-            <span class="skills-cat-icon">🌐</span> API Testing
-          </h3>
-          <div class="skills-tags">
-            <span class="skill-tag skill-tag--primary">Postman</span>
-            <span class="skill-tag skill-tag--primary">REST API Testing</span>
-            <span class="skill-tag skill-tag--primary">Playwright API</span>
-            <span class="skill-tag">REST Assured</span>
-            <span class="skill-tag">Schema Validation</span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-cat-title">
-            <span class="skills-cat-icon">💻</span> Languages
-          </h3>
-          <div class="skills-tags">
-            <span class="skill-tag skill-tag--primary">JavaScript</span>
-            <span class="skill-tag skill-tag--primary">Java</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">SQL</span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-cat-title">
-            <span class="skills-cat-icon">🚀</span> CI/CD & DevOps
-          </h3>
-          <div class="skills-tags">
-            <span class="skill-tag skill-tag--primary">Jenkins</span>
-            <span class="skill-tag skill-tag--primary">GitHub Actions</span>
-            <span class="skill-tag">Maven</span>
-            <span class="skill-tag">Git / GitHub</span>
-            <span class="skill-tag">AWS (Basics)</span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-cat-title">
-            <span class="skills-cat-icon">🧪</span> Testing Types
-          </h3>
-          <div class="skills-tags">
-            <span class="skill-tag skill-tag--primary">AI Testing</span>
-            <span class="skill-tag skill-tag--primary">Performance (JMeter)</span>
-            <span class="skill-tag">Security (OWASP ZAP)</span>
-            <span class="skill-tag">Mobile (Android / iOS)</span>
-            <span class="skill-tag">Cross-Browser</span>
-            <span class="skill-tag">Regression</span>
-            <span class="skill-tag">Smoke / Sanity</span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-cat-title">
-            <span class="skills-cat-icon">🛠</span> Frameworks & Tools
-          </h3>
-          <div class="skills-tags">
-            <span class="skill-tag skill-tag--primary">TestNG</span>
-            <span class="skill-tag skill-tag--primary">JUnit</span>
-            <span class="skill-tag">Cucumber (BDD)</span>
-            <span class="skill-tag">Allure Reports</span>
-            <span class="skill-tag">JIRA</span>
-            <span class="skill-tag">Azure DevOps</span>
-            <span class="skill-tag">IntelliJ / VS Code</span>
-          </div>
-        </div>
+        <a href="Thangaprabha_QA_Engineer_Resume.docx" download class="pql-btn pql-resume">
+          <i class="fas fa-file-arrow-down"></i> Download Resume
+        </a>
       </div>
 
-      <div class="achievements reveal-up">
-        <h3 class="achievements-title">Key Achievements</h3>
-        <div class="achievements-grid">
-          <div class="achievement-card">
-            <div class="achievement-icon">🏆</div>
-            <p>Automated <strong>100+ test modules</strong> (83 UI + 20+ API) with 100% daily CI/CD success rate at Contentstack</p>
-          </div>
-          <div class="achievement-card">
-            <div class="achievement-icon">🤖</div>
-            <p>Built an <strong>AI testing validation framework</strong> for semantic accuracy scoring, reducing manual AI output review time significantly</p>
-          </div>
-          <div class="achievement-card">
-            <div class="achievement-icon">⚡</div>
-            <p>Reduced regression cycle time by <strong>80%</strong> through comprehensive automation across web, mobile, and API layers</p>
-          </div>
-          <div class="achievement-card">
-            <div class="achievement-icon">🌐</div>
-            <p>Delivered QA across <strong>7+ diverse projects</strong> spanning FinTech, EdTech, CMS, and AI domains</p>
-          </div>
+      <!-- Right: About text -->
+      <div class="about-text-col">
+        <h3 class="about-greeting">Hello! I'm <span>Thangaprabha J</span></h3>
+
+        <p>I'm a passionate <strong>QA Engineer and SDET</strong> with over <strong>4.5 years</strong> of hands-on experience ensuring world-class software quality across web, mobile, and API applications. I thrive at the intersection of quality engineering, automation innovation, and AI-driven testing.</p>
+
+        <p>At <strong>ICANIO Technologies</strong>, I've architected end-to-end automation frameworks using <strong>Selenium (Java)</strong> and <strong>Playwright (JavaScript)</strong> — achieving <strong>100% daily CI/CD success rates</strong> across 83+ UI modules and 20+ API modules for enterprise platforms like Contentstack. My automation-first mindset has slashed regression cycle times by <strong>80%</strong>, freeing teams to ship faster with confidence.</p>
+
+        <p>What sets me apart is my pioneering work in <strong>AI output validation</strong> — I designed a novel scoring framework that evaluates semantic accuracy, detects partial matches, and flags hallucinations in AI-extracted data. This is a rare, cutting-edge skill that's becoming essential as AI transforms software products.</p>
+
+        <p>I'm equally comfortable deep in test strategy, defect triage, and stakeholder communication. Whether it's a complex CI pipeline, a mobile payment flow, or a high-stakes AI model — I bring precision, curiosity, and a relentless drive for quality to everything I build.</p>
+
+        <div class="about-highlights">
+          <div class="highlight-chip"><i class="fas fa-check-circle"></i> Automation Framework Design</div>
+          <div class="highlight-chip"><i class="fas fa-check-circle"></i> CI/CD Pipeline Integration</div>
+          <div class="highlight-chip"><i class="fas fa-check-circle"></i> AI Testing & Validation</div>
+          <div class="highlight-chip"><i class="fas fa-check-circle"></i> Agile / Scrum Teams</div>
+          <div class="highlight-chip"><i class="fas fa-check-circle"></i> Performance & Security Testing</div>
+          <div class="highlight-chip"><i class="fas fa-check-circle"></i> Cross-platform (Web, Mobile, API)</div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="section-label reveal-left">
-        <span class="section-num">05</span>
-        <span class="section-title-sm">Contact</span>
+    <!-- Tech marquee -->
+    <div class="tech-marquee-wrap reveal">
+      <div class="marquee-label-col">
+        <i class="fas fa-layer-group"></i>
+        <p class="marquee-label">Tech Stack</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal-left">
-          <h2 class="section-heading">Let's build<br /><em>quality together.</em></h2>
-          <p class="contact-body">Open to new opportunities, collaborations, and conversations around test automation, AI testing, and quality engineering.</p>
-          <div class="contact-details">
-            <a href="mailto:thangaprabhaj253@gmail.com" class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-              </div>
-              <div>
-                <span class="contact-detail-label">Email</span>
-                <span class="contact-detail-value">thangaprabhaj253@gmail.com</span>
-              </div>
-            </a>
-            <a href="tel:+919384135123" class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.5 5.5l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div>
-                <span class="contact-detail-label">Phone</span>
-                <span class="contact-detail-value">+91 9384135123</span>
-              </div>
-            </a>
-            <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank" class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </div>
-              <div>
-                <span class="contact-detail-label">LinkedIn</span>
-                <span class="contact-detail-value">thangaprabha-j-b7021721a</span>
-              </div>
-            </a>
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <span class="contact-detail-label">Location</span>
-                <span class="contact-detail-value">Tuticorin, Tamil Nadu, India</span>
-              </div>
+      <div class="marquee-track">
+        <div class="tech-marquee">
+          <span>Selenium</span><span>Playwright</span><span>Java</span><span>JavaScript</span><span>Postman</span><span>JIRA</span><span>Jenkins</span><span>JMeter</span><span>Cucumber</span><span>TestNG</span><span>GitHub Actions</span><span>OWASP ZAP</span><span>Allure Reports</span><span>Maven</span>
+          <span>Selenium</span><span>Playwright</span><span>Java</span><span>JavaScript</span><span>Postman</span><span>JIRA</span><span>Jenkins</span><span>JMeter</span><span>Cucumber</span><span>TestNG</span><span>GitHub Actions</span><span>OWASP ZAP</span><span>Allure Reports</span><span>Maven</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-tinted">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">What I Know</span>
+      <h2 class="sec-title">Technical <em>Skills</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="sc-header"><div class="sc-icon purple"><i class="fas fa-robot"></i></div><h3>Automation Testing</h3></div>
+        <div class="sc-tags"><span>Selenium WebDriver</span><span>Playwright (JS)</span><span>Cypress (Exploring)</span><span>BugBug.io</span><span>RapidBotz</span></div>
+      </div>
+      <div class="skill-card reveal d1">
+        <div class="sc-header"><div class="sc-icon pink"><i class="fas fa-clipboard-check"></i></div><h3>Manual Testing</h3></div>
+        <div class="sc-tags"><span>Functional Testing</span><span>Regression Testing</span><span>Smoke &amp; Sanity</span><span>Integration Testing</span><span>Cross-Browser</span><span>Android &amp; iOS</span></div>
+      </div>
+      <div class="skill-card reveal d2">
+        <div class="sc-header"><div class="sc-icon violet"><i class="fas fa-plug"></i></div><h3>API Testing</h3></div>
+        <div class="sc-tags"><span>Postman</span><span>REST API Testing</span><span>Playwright API</span><span>REST Assured</span></div>
+      </div>
+      <div class="skill-card reveal d1">
+        <div class="sc-header"><div class="sc-icon rose"><i class="fas fa-code"></i></div><h3>Programming</h3></div>
+        <div class="sc-tags"><span>Java</span><span>JavaScript</span><span>Python (Scripting)</span><span>SQL (Basic)</span></div>
+      </div>
+      <div class="skill-card reveal d2">
+        <div class="sc-header"><div class="sc-icon purple"><i class="fas fa-brain"></i></div><h3>AI &amp; QA</h3></div>
+        <div class="sc-tags"><span>AI Testing &amp; Validation</span><span>Semantic Accuracy Scoring</span><span>Hallucination Detection</span><span>OWASP ZAP</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sc-header"><div class="sc-icon pink"><i class="fas fa-cubes"></i></div><h3>Frameworks &amp; Tools</h3></div>
+        <div class="sc-tags"><span>TestNG</span><span>JUnit</span><span>Cucumber (BDD)</span><span>Page Object Model</span><span>Apache JMeter</span><span>Allure Reports</span><span>Maven</span></div>
+      </div>
+      <div class="skill-card reveal d1">
+        <div class="sc-header"><div class="sc-icon violet"><i class="fas fa-code-branch"></i></div><h3>CI/CD &amp; DevOps</h3></div>
+        <div class="sc-tags"><span>Jenkins</span><span>GitHub Actions</span><span>Git</span><span>GitHub</span><span>JIRA</span><span>Azure</span></div>
+      </div>
+      <div class="skill-card reveal d2">
+        <div class="sc-header"><div class="sc-icon rose"><i class="fas fa-sitemap"></i></div><h3>Methodologies</h3></div>
+        <div class="sc-tags"><span>Agile / Scrum</span><span>Risk-Based Testing</span><span>BDD</span><span>SDLC</span><span>STLC</span><span>Data-Driven Testing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">My Journey</span>
+      <h2 class="sec-title">Work <em>Experience</em></h2>
+    </div>
+
+    <div class="company-header reveal">
+      <div class="co-logo">IC</div>
+      <div class="co-info">
+        <h3>ICANIO Technologies Inc.</h3>
+        <span>Quality Assurance Engineer &nbsp;·&nbsp; June 2021 – Present</span>
+      </div>
+      <div class="co-badge"><i class="fas fa-briefcase"></i> Full-time</div>
+    </div>
+
+    <div class="exp-timeline">
+      <div class="exp-item reveal">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <div><h4>TalAiro – AI-Powered Talent Acquisition Platform</h4><p class="exp-period"><i class="fas fa-clock"></i> Sep 2025 – Present</p></div>
+            <span class="exp-badge ai">AI Testing</span>
+          </div>
+          <p class="exp-about">Platform for talent acquisition, performance management, and business optimization.</p>
+          <ul>
+            <li>Executed manual functional, regression, and integration testing on QA/dev builds</li>
+            <li>Performed AI testing to validate accuracy of JD and resume data extraction via APIs</li>
+            <li>Developed a scoring framework to evaluate semantic accuracy, partial matches, and hallucinations in AI-extracted data</li>
+            <li>Verified expected vs. actual AI output values and classified results as Exact, Partial, or Hallucinated</li>
+            <li>Logged and tracked defects in JIRA, collaborating with developers for timely resolution</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal d1">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <div><h4>Contentstack – API Automation (CMS Platform)</h4><p class="exp-period"><i class="fas fa-clock"></i> June 2025 – Sep 2025</p></div>
+            <span class="exp-badge api">API Automation</span>
+          </div>
+          <p class="exp-about">API automation layer for the Contentstack CMS platform.</p>
+          <ul>
+            <li>Automated 20+ API modules using Playwright with REST API testing, achieving 100% daily CI success rate</li>
+            <li>Designed and maintained API test scripts with schema validation, assertion checks, and error handling</li>
+            <li>Integrated API test suite with CI/CD pipelines for automated regression on every deployment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal d2">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <div><h4>Contentstack – UI Automation (CMS Platform)</h4><p class="exp-period"><i class="fas fa-clock"></i> June 2024 – June 2025</p></div>
+            <span class="exp-badge ui">UI Automation</span>
+          </div>
+          <p class="exp-about">Enterprise CMS platform for web page creation and content management.</p>
+          <ul>
+            <li>Automated 83+ test modules using Playwright (JavaScript), achieving 100% daily CI/CD success rate</li>
+            <li>Built modular, reusable, and scalable test scripts following Page Object Model (POM)</li>
+            <li>Integrated Playwright automation suite with Jenkins CI/CD pipelines for continuous test execution</li>
+            <li>Reduced manual regression effort by 80% through full UI automation coverage</li>
+            <li>Proactively identified, reported, and resolved test failures maintaining suite stability</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <div><h4>PluginLive – Student-Corporate Job Matching Platform</h4><p class="exp-period"><i class="fas fa-clock"></i> Feb 2023 – June 2024</p></div>
+            <span class="exp-badge perf">Manual + Performance</span>
+          </div>
+          <p class="exp-about">Platform connecting students with job opportunities via institutes and corporates.</p>
+          <ul>
+            <li>Performed end-to-end manual testing across 4 distinct user roles: Admin, Institute, Student, and Corporate</li>
+            <li>Validated role publishing workflows, student eligibility logic, and access control scenarios</li>
+            <li>Conducted load and stress testing using JMeter to validate platform scalability</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal d1">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <div><h4>QPay – Mobile Payment Application</h4><p class="exp-period"><i class="fas fa-clock"></i> Feb 2023 – Apr 2023</p></div>
+            <span class="exp-badge mob">Mobile Testing</span>
+          </div>
+          <p class="exp-about">Mobile payment app (similar to PhonePe/GPay) for Android and iOS.</p>
+          <ul>
+            <li>Created and executed test cases for smoke and functional testing on Android and iOS builds</li>
+            <li>Validated payment flows, transaction history, and error handling scenarios</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal d2">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <div><h4>Smart Search – ElasticSearch-Powered Search Application</h4><p class="exp-period"><i class="fas fa-clock"></i> April 2022 – Sep 2024</p></div>
+            <span class="exp-badge api">API + Automation</span>
+          </div>
+          <p class="exp-about">Real-time, high-performance search application powered by ElasticSearch.</p>
+          <ul>
+            <li>Created comprehensive test cases from business and functional requirements</li>
+            <li>Performed API testing and automation using Postman for search endpoints</li>
+            <li>Utilized BugBug.io for web UI automation across key user workflows</li>
+            <li>Logged and tracked defects collaborating with developers for quick resolution</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <div class="exp-meta">
+            <div><h4>Careerlabs – Unified Student Profile Building Portal</h4><p class="exp-period"><i class="fas fa-clock"></i> June 2021 – April 2022</p></div>
+            <span class="exp-badge ui">Manual Testing</span>
+          </div>
+          <p class="exp-about">India's first profile-building platform for college students targeting higher studies and job placements.</p>
+          <ul>
+            <li>Developed detailed test cases based on business requirements and user stories</li>
+            <li>Performed functional, regression, and integration testing across multiple modules</li>
+            <li>Logged defects with clear reproduction steps and collaborated with developers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section-tinted">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">What I've Built</span>
+      <h2 class="sec-title">Featured <em>Projects</em></h2>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card reveal">
+        <div class="proj-glow"></div>
+        <div class="proj-top">
+          <div class="proj-ico purple"><i class="fas fa-brain"></i></div>
+          <span class="proj-domain">AI / HR Tech</span>
+          <span class="proj-featured-tag"><i class="fas fa-star"></i> Featured</span>
+        </div>
+        <h3>TalAiro – AI Talent Acquisition</h3>
+        <p>AI-powered platform for talent acquisition and performance management. Built a novel scoring framework for semantic accuracy evaluation of AI-extracted data.</p>
+        <div class="proj-highlights">
+          <span><i class="fas fa-check"></i> AI Output Validation</span>
+          <span><i class="fas fa-check"></i> Semantic Scoring</span>
+          <span><i class="fas fa-check"></i> Hallucination Detection</span>
+        </div>
+        <div class="proj-pills"><span>Manual Testing</span><span>AI Testing</span><span>JIRA</span><span>REST API</span></div>
+      </div>
+
+      <div class="proj-card reveal d1">
+        <div class="proj-glow pink"></div>
+        <div class="proj-top">
+          <div class="proj-ico pink"><i class="fas fa-layer-group"></i></div>
+          <span class="proj-domain">CMS / Enterprise</span>
+          <span class="proj-featured-tag"><i class="fas fa-star"></i> Featured</span>
+        </div>
+        <h3>Contentstack – UI + API Automation</h3>
+        <p>Enterprise CMS with 83+ UI and 20+ API automated test modules. Achieved 100% daily CI/CD success rates, reducing regression effort by 80%.</p>
+        <div class="proj-highlights">
+          <span><i class="fas fa-check"></i> 83+ UI Modules</span>
+          <span><i class="fas fa-check"></i> 20+ API Modules</span>
+          <span><i class="fas fa-check"></i> 80% Regression Reduction</span>
+        </div>
+        <div class="proj-pills"><span>Playwright</span><span>JavaScript</span><span>Jenkins</span><span>CI/CD</span></div>
+      </div>
+
+      <div class="proj-card reveal d2">
+        <div class="proj-glow violet"></div>
+        <div class="proj-top">
+          <div class="proj-ico violet"><i class="fas fa-graduation-cap"></i></div>
+          <span class="proj-domain">EdTech</span>
+          <span class="proj-featured-tag"><i class="fas fa-star"></i> Featured</span>
+        </div>
+        <h3>PluginLive – Job Matching Platform</h3>
+        <p>Platform connecting students with corporates. End-to-end testing across 4 user roles with load and stress testing under concurrent user scenarios.</p>
+        <div class="proj-highlights">
+          <span><i class="fas fa-check"></i> 4 User Role Testing</span>
+          <span><i class="fas fa-check"></i> Load & Stress Testing</span>
+          <span><i class="fas fa-check"></i> Access Control Validation</span>
+        </div>
+        <div class="proj-pills"><span>Manual Testing</span><span>JMeter</span><span>Performance Testing</span></div>
+      </div>
+
+      <div class="proj-card reveal d1">
+        <div class="proj-glow rose"></div>
+        <div class="proj-top">
+          <div class="proj-ico rose"><i class="fas fa-mobile-alt"></i></div>
+          <span class="proj-domain">FinTech</span>
+          <span class="proj-featured-tag"><i class="fas fa-star"></i> Featured</span>
+        </div>
+        <h3>QPay – Mobile Payment App</h3>
+        <p>Mobile payment application for Android and iOS. Comprehensive testing of payment flows, transaction history, and error handling on both platforms.</p>
+        <div class="proj-highlights">
+          <span><i class="fas fa-check"></i> Android & iOS Coverage</span>
+          <span><i class="fas fa-check"></i> Payment Flow Validation</span>
+          <span><i class="fas fa-check"></i> Error Handling Scenarios</span>
+        </div>
+        <div class="proj-pills"><span>Mobile Testing</span><span>Android</span><span>iOS</span><span>Functional Testing</span></div>
+      </div>
+
+      <div class="proj-card reveal d2">
+        <div class="proj-glow"></div>
+        <div class="proj-top">
+          <div class="proj-ico purple"><i class="fas fa-search"></i></div>
+          <span class="proj-domain">Search / Tech</span>
+          <span class="proj-featured-tag"><i class="fas fa-star"></i> Featured</span>
+        </div>
+        <h3>Smart Search – ElasticSearch App</h3>
+        <p>Real-time, high-performance search powered by ElasticSearch. API automation via Postman and BugBug.io for web UI automation.</p>
+        <div class="proj-highlights">
+          <span><i class="fas fa-check"></i> REST API Automation</span>
+          <span><i class="fas fa-check"></i> Web UI Automation</span>
+          <span><i class="fas fa-check"></i> Search Accuracy Testing</span>
+        </div>
+        <div class="proj-pills"><span>Postman</span><span>BugBug.io</span><span>REST API</span><span>Manual Testing</span></div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-glow pink"></div>
+        <div class="proj-top">
+          <div class="proj-ico pink"><i class="fas fa-user-graduate"></i></div>
+          <span class="proj-domain">EdTech</span>
+          <span class="proj-featured-tag"><i class="fas fa-star"></i> Featured</span>
+        </div>
+        <h3>Careerlabs – Student Portal</h3>
+        <p>India's first profile-building platform for college students. Functional, regression, and integration testing across multiple modules from requirements to release.</p>
+        <div class="proj-highlights">
+          <span><i class="fas fa-check"></i> Full SDLC Coverage</span>
+          <span><i class="fas fa-check"></i> Regression Testing</span>
+          <span><i class="fas fa-check"></i> Integration Testing</span>
+        </div>
+        <div class="proj-pills"><span>Manual Testing</span><span>Functional Testing</span><span>JIRA</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="certifications" class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">Milestones</span>
+      <h2 class="sec-title">Key <em>Achievements</em></h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card reveal"><div class="ach-ico"><i class="fas fa-trophy"></i></div><h4>100+ Modules Automated</h4><p>Automated 100+ test modules (83 UI + 20+ API) with 100% daily CI/CD success rate at Contentstack</p></div>
+      <div class="ach-card reveal d1"><div class="ach-ico brain"><i class="fas fa-brain"></i></div><h4>AI Testing Framework</h4><p>Built an AI testing validation framework for semantic accuracy scoring, reducing manual AI output review time significantly</p></div>
+      <div class="ach-card reveal d2"><div class="ach-ico clock"><i class="fas fa-bolt"></i></div><h4>80% Regression Reduction</h4><p>Reduced regression cycle time through comprehensive automation across web, mobile, and API layers</p></div>
+      <div class="ach-card reveal d1"><div class="ach-ico globe"><i class="fas fa-globe"></i></div><h4>7+ Diverse Projects</h4><p>Delivered quality assurance across 7+ diverse projects spanning FinTech, EdTech, CMS, and AI domains</p></div>
+      <div class="ach-card reveal d2"><div class="ach-ico"><i class="fas fa-tasks"></i></div><h4>Full SDLC Coverage</h4><p>Experienced across full SDLC and STLC — from requirements review and test planning to production release</p></div>
+      <div class="ach-card reveal d3"><div class="ach-ico brain"><i class="fas fa-shield-alt"></i></div><h4>Multi-Domain Expertise</h4><p>Proven expertise spanning functional, regression, API, mobile, performance, security, and AI testing</p></div>
+    </div>
+
+    <div class="competency-block reveal">
+      <h3>Core Competencies</h3>
+      <div class="comp-list">
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Test Automation (UI &amp; API)</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Selenium WebDriver &amp; Playwright</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Manual &amp; Functional Testing</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Regression &amp; Smoke Testing</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> API Testing with Postman</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Performance Testing (JMeter)</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> CI/CD Pipeline Integration</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Agile / Scrum Methodology</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> AI Testing &amp; Validation</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Defect Tracking (JIRA)</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Test Planning &amp; Strategy</div>
+        <div class="comp-chip"><i class="fas fa-check-circle"></i> Risk-Based Testing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section section-tinted">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">My Background</span>
+      <h2 class="sec-title">Education</h2>
+    </div>
+    <div class="edu-wrap reveal">
+      <div class="edu-card">
+        <div class="edu-left">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        </div>
+        <div class="edu-center">
+          <span class="edu-year-badge">2019 – 2021</span>
+          <h3>Master of Science (M.Sc.) in Computer Science</h3>
+          <p>Manonmaniam Sundaranar University</p>
+          <div class="edu-tags">
+            <span><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</span>
+            <span><i class="fas fa-university"></i> Post Graduate</span>
+          </div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-degree">M.Sc</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">Let's Connect</span>
+      <h2 class="sec-title">Get In <em>Touch</em></h2>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-left reveal slide-left">
+        <p class="contact-intro">Open to new opportunities, collaborations, and professional conversations. Reach out on LinkedIn or drop a message — I'd love to connect!</p>
+        <div class="contact-cards">
+          <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank" rel="noopener noreferrer" class="ccard">
+            <div class="ccard-ico li"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="ccard-label">LinkedIn</span>
+              <span class="ccard-val">thangaprabha-j-b7021721a</span>
+            </div>
+            <i class="fas fa-arrow-right ccard-arr"></i>
+          </a>
+          <a href="mailto:thangaprabhaj253@gmail.com" class="ccard">
+            <div class="ccard-ico mail"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="ccard-label">Email</span>
+              <span class="ccard-val">thangaprabhaj253@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right ccard-arr"></i>
+          </a>
+          <div class="ccard no-hover">
+            <div class="ccard-ico loc"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="ccard-label">Location</span>
+              <span class="ccard-val">Tuticorin, Tamil Nadu, India</span>
             </div>
           </div>
         </div>
-
-        <div class="contact-form-wrap reveal-right">
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-group">
-              <input type="text" id="formName" name="name" placeholder=" " required />
-              <label for="formName">Your Name</label>
-              <div class="form-glow"></div>
+      </div>
+      <div class="contact-right reveal slide-right">
+        <div class="form-card">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="fg">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required/>
             </div>
-            <div class="form-group">
-              <input type="email" id="formEmail" name="email" placeholder=" " required />
-              <label for="formEmail">Email Address</label>
-              <div class="form-glow"></div>
+            <div class="fg">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required/>
             </div>
-            <div class="form-group">
-              <input type="text" id="formSubject" name="subject" placeholder=" " />
-              <label for="formSubject">Subject</label>
-              <div class="form-glow"></div>
+            <div class="fg">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Collaboration / General Inquiry"/>
             </div>
-            <div class="form-group">
-              <textarea id="formMessage" name="message" rows="5" placeholder=" " required></textarea>
-              <label for="formMessage">Your Message</label>
-              <div class="form-glow"></div>
+            <div class="fg">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell me about your project or topic..." required></textarea>
             </div>
-            <button type="submit" class="btn btn--primary btn--full">
-              <span>Send Message</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <button type="submit" class="btn-grad form-submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
             </button>
-            <div class="form-success" id="formSuccess">
-              <span>✓</span> Message sent! I'll be in touch soon.
-            </div>
           </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-logo">TJ<span>.</span></div>
-        <p class="footer-copy">© 2025 Thangaprabha J · Crafted with precision</p>
-        <div class="footer-links">
-          <a href="mailto:thangaprabhaj253@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-glow"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">TJ<span>.</span></div>
+      <p>QA Engineer · Automation Specialist · SDET</p>
     </div>
-  </footer>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/thangaprabha-j-b7021721a/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:thangaprabhaj253@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Thangaprabha J. All rights reserved.</p>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<button class="top-btn" id="topBtn" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="script.js"></script>
 </body>
 </html>
