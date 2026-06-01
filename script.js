@@ -157,24 +157,25 @@ if (form) {
     window.location.href = mailtoLink;
 
     // Button feedback
-    const btn  = document.getElementById('submitBtn');
+    const btn = document.getElementById('submitBtn');
     const orig = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check-circle"></i> Opening Email...';
+    btn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent';
     btn.style.background = 'linear-gradient(135deg, #5a35a8 0%, #a8438a 100%)';
-    btn.style.opacity    = '0.85';
+    btn.style.opacity = '0.85';
     btn.disabled = true;
 
     setTimeout(() => {
       btn.innerHTML = orig;
       btn.style.background = '';
-      btn.style.opacity    = '';
+      btn.style.opacity = '';
       btn.disabled = false;
       form.reset();
     }, 3500);
   });
 }
 
-// ── EMAIL LINK FALLBACK — ensure all mailto links work ──
+// ── EMAIL LINK FALLBACK — ensure all mailto links work —
+
 document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
   link.addEventListener('click', (e) => {
     // Allow default behaviour (opens mail client) — just ensure no JS overrides
